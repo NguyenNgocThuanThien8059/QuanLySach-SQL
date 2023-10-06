@@ -61,6 +61,10 @@ namespace QuanLySach_SQL
                 {
                     MessageBox.Show(" Vui lòng nhập đầy đủ thông tin sách ");
                 }
+                if(textBox1.Text.Length < 6)
+                {
+                    MessageBox.Show(" Mã sách phải có ít nhất 6 ký tự ");
+                }
                 else
                 {
                     List<Sach> BookList = context.Saches.ToList();
